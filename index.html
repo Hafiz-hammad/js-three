@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignment 4</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+//Assignment 4
+
+//Q-1
+
+// //Store the correct password in a variable
+// var originalPassword = "admin";
+
+// // Ask the user to enter their password
+// var userPassword = prompt("Please enter your password:");
+
+// // Validate the entered password
+// if (!userPassword) 
+// {
+//     // User didn't enter a password
+//     alert("Please enter your password.");
+// } 
+// else if (userPassword === originalPassword) 
+// {
+//     // Passwords match
+//     alert("Correct! The password you entered matches the original password.");
+// } 
+// else 
+// {
+//     // Incorrect password
+//     alert("Incorrect password.");
+// }
+
+
+// Q-2
+
+// var greeting; 
+// var hour = 13; 
+// if (hour < 18) 
+// { 
+// greeting = "Good day"; 
+// document.write(greeting);
+// }
+// else
+// { 
+// greeting = "Good evening";
+// document.write(greeting); 
+// } 
+
+
+// //Q-3
+
+// //a)
+// //Empty array for student names
+// const studentNames = [];
+// console.log(studentNames);
+
+// //b)
+// //Empty array using object notation
+// const studentNamesObj = new Array(); 
+// console.log(studentNamesObj);
+
+// //c)
+// //Example string array
+// const fruits = ["Apple", "Banana", "Orange"];
+// console.log(fruits);
+
+// //d)
+// //Example numbers array
+// const ages = [20, 25, 30, 22];
+// console.log(ages);
+
+// //e)
+//  //Example boolean array
+//  const isPassed = [true, false, true, true];
+//  console.log(isPassed);
+
+//  //f)
+//  //Example mixed array
+//  const mixedData = ["John", 25, true, "London"];   
+//  console.log(mixedData);
+// //g)
+// //Available education qualifications in Pakistan
+//  const qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+//  //Q-4
+
+//  //a)
+//  //Initialize an array with color names
+//  const colorArray = ["Red", "Green", "Blue"];
+
+//  //b)
+//  //Display the original array in the browser
+// console.log("Original array:", colorArray);
+
+ 
+//  // a. Add a color to the beginning of the array
+//  const userColorStart = prompt("Enter a color to add to the beginning:");
+// colorArray.unshift(userColorStart);
+
+// // b. Add a color to the end of the array
+// const userColorEnd = prompt("Enter a color to add to the end:");
+// colorArray.push(userColorEnd);
+
+// // c. Add two more colors to the beginning of the array
+// colorArray.unshift("Yellow", "Purple");
+
+// // d. Delete the first color in the array
+// colorArray.shift();
+
+// // e. Delete the last color in the array
+// colorArray.pop();
+
+// // f. Ask the user for an index and color name to insert
+// const userIndex = parseInt(prompt("Enter an index to add a color:"));
+// const userColorInsert = prompt("Enter a color to insert:");
+// colorArray.splice(userIndex, 0, userColorInsert);
+
+// // g. Ask the user for an index and number of colors to delete
+// const userDeleteIndex = parseInt(prompt("Enter an index to delete color(s):"));
+// const userDeleteCount = parseInt(prompt("Enter the number of colors to delete:"));
+// colorArray.splice(userDeleteIndex, userDeleteCount);
+
+// // Display the updated array in the browser
+// console.log("Updated array:", colorArray);
+
+
+// //Q-5
+
+// //Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.
+
+// // Prompt the user for the number of students
+// const numOfStudents = parseInt(prompt("Enter the number of students:"));
+
+// // Initialize arrays to store student names and scores
+// const names = [];
+// const scores = [];
+
+// // Input student names and scores
+// for (let i = 0; i < numOfStudents; i++) {
+//     const name = prompt(`Enter name for student ${i + 1}:`);
+//     const score = parseInt(prompt(`Enter score for ${name}:`));
+//     names.push(name);
+//     scores.push(score);
+// }
+
+// // Sort scores in ascending order
+// scores.sort((a, b) => a - b);
+
+// // Display student names with their sorted scores
+// console.log("Student names in ascending order of scores:");
+// for (let i = 0; i < numOfStudents; i++) {
+//     console.log(`${names[i]}: ${scores[i]}`);
+// }
+
+// //Q-6
+
+// // Define an array of phone manufacturers
+// const phoneManufacturers = [
+//     "Apple",
+//     "Samsung",
+//     "Motorola",
+//     "Nokia",
+//     "Sony",
+//     "Haier"
+// ];
+
+// // Generate the dropdown/select menu
+// document.write("<form>");
+// document.write("<select id=\"manufacturerSelect\">");
+// document.write("<option>Select </option>");
+
+// // Populate the options from the array
+// for (let i = 0; i < phoneManufacturers.length; i++) {
+//     document.write(`<option>${phoneManufacturers[i]}</option>`);
+// }
+
+// document.write("</select>");
+// document.write("</form>");
+
+// //Q-7
+
+// // Take input from the user
+// const number = parseInt(prompt("Enter an integer:"));
+// const tableLength = parseInt(prompt("Enter the length of the multiplication table:"));
+
+// // Generate and display the multiplication table
+// console.log(`Multiplication table for ${number} (up to ${tableLength}):`);
+// for (let i = 1; i <= tableLength; i++) {
+//     const result = number * i;
+//     console.log(`${number} * ${i} = ${result}`);
+// }
+
+// //Q-8
+
+// //a)
+// const countingSeries = Array.from({ length: 15 }, (_, index) => index + 1);
+// console.log("Counting:", countingSeries.join(", "));
+
+// //b)
+// const reverseCountingSeries = Array.from({ length: 10 }, (_, index) => 10 - index);
+// console.log("Reverse counting:", reverseCountingSeries.join(", "));
+
+// //c)
+// const evenSeries = Array.from({ length: 11 }, (_, index) => index * 2);
+// console.log("Even:", evenSeries.join(", "));
+
+// //d)
+// const oddSeries = Array.from({ length: 10 }, (_, index) => index * 2 + 1);
+// console.log("Odd:", oddSeries.join(", "));
+
+// //e)
+// const kSeries = Array.from({ length: 10 }, (_, index) => (index + 1) * 2 + "k");
+// console.log("Series:", kSeries.join(", "));
+
+// //Q-9
+
+// // Given array of items
+// const A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// // Function to search for an item
+// function searchItem() {
+//     const userInput = prompt("Enter an item to search:");
+//     const lowerCaseInput = userInput.toLowerCase(); // Convert input to lowercase for case-insensitive search
+
+//     if (A.includes(lowerCaseInput)) {
+//         alert(`"${userInput}" is found in the list! 🎉`);
+//     } else {
+//         alert(`"${userInput}" is not found in the list. 😔`);
+//     }
+// }
+
+// Call the search function
+//searchItem();
+
+//Q-10
+
+// function toTitleCase(str) {
+//     return str.replace(/\w\S*/g, function(txt) {
+//         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+//     });
+// }
+
+// // Example usage:
+// const usersInput = prompt("Enter a sentence:");
+// const titleCaseOutput = toTitleCase(usersInput);
+// console.log("Title Case Output:", titleCaseOutput);
+
+// //Q-11
+
+// function convertToUppercase(input) {
+//     return input.toUpperCase(); }
+
+// // // Example usage:
+//  const userInput = prompt("Enter a sentence:");
+// const uppercaseOutput = convertToUppercase(userInput);
+// console.log("Uppercase Output:", uppercaseOutput);
+
+
+// //Q-12
+
+// const inputString = "472";
+// const convertedNumber = Number(inputString);
+
+// console.log("Original String:", inputString);
+// console.log("Converted Number:", convertedNumber);
+// console.log("Type of Converted Number:", typeof convertedNumber);
+
+    
+</script>
+
+</html>
